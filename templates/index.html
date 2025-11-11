@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Churn Prediction</h1>
+        <form action="/predict" method="POST">
+            <input type="number" step="any" name="CreditScore" placeholder="Credit Score" required>
+            <input type="number" step="any" name="Age" placeholder="Age" required>
+            <input type="number" step="any" name="Tenure" placeholder="Tenure" required>
+            <input type="number" step="any" name="Balance" placeholder="Balance" required>
+            <input type="number" step="any" name="NumOfProducts" placeholder="Number of Products" required>
+            <input type="number" step="any" name="HasCrCard" placeholder="Has Credit Card (1/0)" required>
+            <input type="number" step="any" name="IsActiveMember" placeholder="Is Active Member (1/0)" required>
+            <input type="number" step="any" name="EstimatedSalary" placeholder="Estimated Salary" required>
+
+            <label for="Geography">Geography:</label>
+            <select name="Geography" required>
+                <option value="0,0">France</option>
+                <option value="1,0">Germany</option>
+                <option value="0,1">Spain</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <div class="result">
+                <h2>{{ prediction_text }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
