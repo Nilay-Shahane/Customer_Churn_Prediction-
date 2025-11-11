@@ -24,24 +24,7 @@ The model was trained using a telecom customer churn dataset with the following 
 3. **Scaling** – Applied `StandardScaler` to numerical features  
 4. **Modeling** – Trained using `RandomForestClassifier`  
 5. **Evaluation** – Achieved accuracy of **~85–90%**
-
----
-
-##  Project Structure
-customer-churn-prediction/
-│
-├── templates/
-│   └── index.html             # Frontend HTML form
-│
-├── static/
-│   └── style.css              # Styling for frontend
-│
-├── customer_churn_model.pkl   # Trained Random Forest model
-├── scaler.pkl                 # StandardScaler used during training
-├── app.py                     # Flask backend
-├── requirements.txt           # Project dependencies
-└── README.md                  # Project documentation
-
+              
 ---
 
 ##  Technologies Used
