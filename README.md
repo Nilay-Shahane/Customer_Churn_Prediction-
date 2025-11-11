@@ -58,8 +58,8 @@ customer-churn-prediction/
 
 
 Author
-Nilay Shahane
-Agentic AI , Machine Learning & Full Stack Developer
+Nilay Shahane :
+(Agentic AI , Machine Learning & Full Stack Developer)
 📧 nilayshahane@gmail.com
 
 
